@@ -14,19 +14,23 @@
 <body>
 	<h1>Recipe Search</h1>
 	<div class="search-form-container">
-		<form class="recipe-search">
+		<form id="" ="recipe-search">
 			<input type="text" placeholder="Find A Recipe">
-			<input type="submit" value="Submit">
+			<button id="submit-search">Search</button>
 		</form>
 		<div class="ingredient-filter">
-			<form class="include-ingredients" input="text">
+			<form id="include-ingredients" input="text">
 				<input type="text" placeholder="include ingredients:">
-				<input type="submit" value="Submit">
+				<button id="add">+</button>
 			</form>
-			<form class="exclude-ingredients" input="text">
+			<form id="exclude-ingredients" input="text">
 				<input type="text" placeholder="exclude ingredients:">
-				<input type="submit" value="Submit">
+				<button id="subtract">-</button>
 			</form>
+		</div>
+		<div class="recipes">
+			<ul class="recipe-list">
+			</ul>
 		</div>
 	</div>
 	 <!--Import jQuery before materialize.js-->

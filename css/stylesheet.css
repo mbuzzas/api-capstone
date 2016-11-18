@@ -59,29 +59,32 @@ input {
 }
 
 .recipe-list li {
-    border-radius: 25px;
-    display: inline-block;
-    margin-bottom: 4%;
+    /* border-radius: 25px; */
+    display: block;
+    margin-bottom: 50px;
     margin-left: 4%;
     margin-right: 4%;
-    height: 250px;
+    /* height: 250px; */
     width: 25%;
-/*    text-align: center;
+    /*    text-align: center;
     background-size: cover;
     background-position: center center;*/
+    float: left;
 }
 
 .image {
-	height: 80%;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    margin-bottom: 0;
-    padding: 0;
+	height: 170px;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 0;
+	padding: 0;
 }
 
 .name {
 	background-color: rgba(153, 153, 153, 0.6);
 	text-align: center;
 	margin-top: 0;
+	padding: 10px 0px;
+	height: 86px;
 }

@@ -1,22 +1,34 @@
 body {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	background-color: #E74535;
+	font-family: Didot, "Didot LT STD", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
 	text-align: center;
-	font-size: 3.5em;
+	font-size: 4.5em;
+    margin: 0.4em 0;
+    text-shadow: 2px 2px 8px #808080;
+}
+
+.cover-image {
+	background-image: url('../images/cooking-header.jpeg');
+	background-position: center;
+	background-size: cover;
+	height: 300px;
 }
 
 form {
 	font-size: 1.5em;
 }
 
+input {
+	text-align: center;
+}
+
 .search-form-container {
 	text-align: center;
 }
 
-#recipe-search {
+.recipe-search {
 	font-size: 1.75em;
 }
 
@@ -30,6 +42,46 @@ form {
 	float: right;
 }
 
+.subtracted-ingredients .i-text {
+	text-decoration: line-through;
+}
+
 .ingredients {
 	list-style-type: none;
+}
+
+.i-text {
+    margin-right: 10px;
+}
+
+.recipes {
+    margin-top: 200px;
+}
+
+.recipe-list li {
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 250px;
+    width: 25%;
+/*    text-align: center;
+    background-size: cover;
+    background-position: center center;*/
+}
+
+.image {
+	height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.name {
+	background-color: rgba(153, 153, 153, 0.6);
+	text-align: center;
+	margin-top: 0;
 }

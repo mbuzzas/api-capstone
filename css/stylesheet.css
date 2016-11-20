@@ -26,10 +26,21 @@ input {
 
 .search-form-container {
 	text-align: center;
+	margin-top: 35px;
 }
 
 .recipe-search {
 	font-size: 1.75em;
+}
+
+.recipe-search_input {
+    width: 50% !important;
+    font-size: 1.2em !important;
+}
+
+.in-ingredients_input, .ex-ingredients_input {
+    width: 75% !important;
+    font-size: 1.2em !important;
 }
 
 .ingredient-addition {
@@ -52,6 +63,7 @@ input {
 
 .i-text {
     margin-right: 10px;
+    font-size: 1.25em;
 }
 
 .recipes {
@@ -59,24 +71,21 @@ input {
 }
 
 .recipe-list li {
-    /* border-radius: 25px; */
+    border-radius: 25px; 
     display: block;
     margin-bottom: 50px;
     margin-left: 4%;
     margin-right: 4%;
     /* height: 250px; */
     width: 25%;
-    /*    text-align: center;
-    background-size: cover;
-    background-position: center center;*/
     float: left;
 }
 
 .image {
-	height: 170px;
+	height: 250px;
 	width: 100%;
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	margin-bottom: 0;
 	padding: 0;
 }
@@ -86,5 +95,15 @@ input {
 	text-align: center;
 	margin-top: 0;
 	padding: 10px 0px;
-	height: 86px;
+	height: 100px;
+}
+
+.name a {
+	color: black;
+	text-decoration: underline;
+	font-size: 1.25em;
+}
+
+p {
+	margin: 0;
 }

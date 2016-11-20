@@ -11,6 +11,10 @@ $(document).ready(function(){
 		$(this).find('input[type="text"]').val('');
 	});
 
+	$('.ing-specify').on('click','.right-check',function() {
+		$(this).parent().remove();
+	});
+
 	$('.recipe-search').submit(function(event){
 		event.preventDefault();
 		var keyword = $('.recipe-search_input').val();
@@ -24,7 +28,7 @@ $(document).ready(function(){
 
 		var baseURL = 'https://api.yummly.com/v1/api/recipes?_app_id=ecc8e08e'
 			+ '&_app_key=1f1523599d47bfaebe84f01732917a96'
-			+ '&q=' + keyword + '&maxResult=100';
+			+ '&q=' + keyword + '&maxResult=99';
 		$('.added-ingredients li .i-text').each(function(i, ingredient){
 			baseURL += '&allowedIngredient[]=' + $(ingredient).text();
 		});

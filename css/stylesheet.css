@@ -33,14 +33,14 @@ input {
 	font-size: 1.75em;
 }
 
-.recipe-search_input {
-    width: 50% !important;
-    font-size: 1.2em !important;
+input.recipe-search_input {
+    width: 50%;
+    font-size: 1.2em;
 }
 
-.in-ingredients_input, .ex-ingredients_input {
-    width: 75% !important;
-    font-size: 1.2em !important;
+input.in-ingredients_input, input.ex-ingredients_input {
+    width: 75%f;
+    font-size: 1.2em;
 }
 
 .ingredient-addition {

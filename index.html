@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <link rel="stylesheet" href="css/normalize.css">
-	<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
 	<title>Document</title>
 </head>
 <body>
@@ -18,44 +14,35 @@
 	<div class="cover-image">
 	</div>
 	<div class="search-form-container">
-		<form class="recipe-search">
-			<input type="text" class="recipe-search_input" placeholder="Find A Recipe">
-			<button type="submit" class="recipe-search_btn">Search</button>
-		</form>
-		<div class="ing-specify">
+
+		<div class="ing-specify container">
 			<div class="ingredient-addition">
-				<form class="in-ingredients">
+				<form class="in-ingredients form-inline">
 					<input type="text" class="in-ingredients_input" placeholder="include ingredients:">
-					<button class="in-ingredients_btn">+</button>
+					<button class="in-ingredients_btn btn btn-default">+</button>
 				</form>
 				<ul class="added-ingredients">
-					<!-- <li class="i-list">
-						<span class="i-text">Jalapenos</span>
-						<span class="right-check">&#10005</span>
-					</li> -->
 				</ul>
 			</div>
 			<div class="ingredient-subtraction">
-				<form class="ex-ingredients">
+				<form class="ex-ingredients form-inline">
 					<input type="text" class="ex-ingredients_input" placeholder="exclude ingredients:">
-					<button class="ex-ingredients_btn">-</button>
+					<button class="ex-ingredients_btn btn btn-default">-</button>
 				</form>
 				<ul class="subtracted-ingredients">
-					<!-- <li class="i-list">
-						<span class="i-text">Cilantro</span>
-						<span class="right-check">&#10005</span>
-					</li> -->
 				</ul>
 			</div>
 		</div>
+		<form class="recipe-search form-inline">
+			<input type="text" class="recipe-search_input" placeholder="Find A Recipe">
+			<button type="submit" class="recipe-search_btn btn btn-default">Search</button>
+		</form>
 	</div>
 	<div class="recipes">
 			<ul class="recipe-list">
 			</ul>
 		</div>
-	 <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

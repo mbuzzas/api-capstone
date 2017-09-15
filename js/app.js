@@ -59,20 +59,6 @@ $(document).ready(function(){
 		});
 
 		$('html, body').animate({
-        	scrollTop: ($(".recipes").offset().top - 50)}, 1500);
+        	scrollTop: $($(".recipes").offset().top - 50)}, 1500);
 	};
-
-
-
-
-					// $('.recipe-list').append('<li style="background-image: url(' + match.imageUrlsBySize[90].replace('s90-c', 's360-c') + ')">' + 
-					// 	'<div class="name">' +
-					// 		'<p><a target="_blank" href=https://www.yummly.com/recipe/' + match.id + ' >' + match.recipeName + '</a></p>' + 
-					// 		'<p>Rating: ' + match.rating +  " out of 5" + '</p>'+ 
-
-					// 	'</div></li>');
-
-
-
-
 });

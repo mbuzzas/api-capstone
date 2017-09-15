@@ -53,12 +53,17 @@ $(document).ready(function(){
 
 						'</div></li>');
 				});
+				$('html, body').animate({
+        			scrollTop: ($(".recipe-list").offset().top - 50)}, 500);
+
 			}
 		})
 		.fail(function(jqXHR, textStatus, errorThrown){
 		});
 
-		$('html, body').animate({
-        	scrollTop: $($(".recipes").offset().top - 50)}, 1500);
 	};
 });
+
+
+
+
